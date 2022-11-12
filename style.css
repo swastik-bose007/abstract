@@ -1,0 +1,374 @@
+@font-face{
+    font-family: 'TT Commons ExtraBold';
+    src: url(fonts/TT\ Commons\ ExtraBold.otf) format('truetype');
+}
+@font-face{
+    font-family: 'TT Commons Bold';
+    src: url(fonts/TT\ Commons\ Bold.otf);
+}
+@font-face{
+    font-family: 'TT Commons Demibold';
+    src: url(fonts/TT\ Commons\ DemiBold.otf) format('truetype');
+}
+@font-face{
+    font-family: 'TT Commons Light';
+    src: url(fonts/TT\ Commons\ Light.otf) format('truetype');
+}
+@font-face{
+    font-family: 'TT Commons Medium';
+    src: url(fonts/TT\ Commons\ Medium.otf) format('truetype');
+}
+
+::-webkit-scrollbar{
+    visibility: hidden;
+    display: none;
+}
+
+html,body{
+    background: #FFECEF;   
+}
+
+:root{
+    /* --------------------------------------
+        COLORS
+    -------------------------------------- */
+    --color-1: #1A1B1F;
+    --color-2: #251B37;
+    --color-3: #077187;
+    --color-4: #FFCACA;
+    --color-5: #FFECEF;
+    --color-6: #ffffff;
+    --color-7: #1a1b1ff1;
+    /* --------------------------------------
+        FONTS
+    -------------------------------------- */
+    --font-1: 'TT Commons Light';
+    --font-2: 'TT Commons Medium';
+    --font-3: 'TT Commons Demibold';
+    --font-4: 'TT Commons Bold';
+    --font-5: 'TT Commons ExtraBold';
+    /* --------------------------------------
+        FONTS SIZE
+    -------------------------------------- */
+    --font-s-1: 0.5rem;
+    --font-s-2: 0.6rem;
+    --font-s-3: 0.7rem;
+    --font-s-4: 0.8rem;
+    --font-s-5: 0.9rem;
+    --font-s-6: 1rem;
+    --font-s-7: 1.5rem;
+    --font-s-8: 2rem;
+    --font-s-9: 3rem;
+    --font-s-10: 4rem;
+    --font-s-11: 5rem;
+    --font-s-12: 1.2rem;
+}
+/* -----------------------------------------------
+    BACKGROUND COLORS
+----------------------------------------------- */
+.bg-color-1{
+    background: var(--color-1);
+}
+.bg-color-2{
+    background: var(--color-2);
+}
+.bg-color-3{
+    background: var(--color-3);
+}
+.bg-color-4{
+    background: var(--color-4);
+}
+.bg-color-5{
+    background: var(--color-5);
+}
+.bg-color-7{
+    background: var(--color-7);
+}
+/* -----------------------------------------------
+    FONT COLORS
+----------------------------------------------- */
+.color-1{
+    color: var(--color-1);
+}
+.color-2{
+    color: var(--color-2);
+}
+.color-3{
+    color: var(--color-3);
+}
+.color-4{
+    color: var(--color-4);
+}
+.color-5{
+    color: var(--color-5);
+}
+.color-6{
+    color: var(--color-6);
+}
+/* 
+-----------------------------------------------
+    FONT FAMILYS
+----------------------------------------------- 
+*/
+.font-1{
+    font-family: var(--font-1);
+}
+.font-2{
+    font-family: var(--font-2);    
+}
+.font-3{
+    font-family: var(--font-3);    
+}
+.font-4{
+    font-family: var(--font-4);    
+}
+.font-5{
+    font-family: var(--font-5);    
+}
+/* 
+-----------------------------------------------
+    FONT SIZE
+----------------------------------------------- 
+*/
+.fontsize-1{
+    font-size: var(--font-s-1);
+}
+.fontsize-2 {
+    font-size: var(--font-s-2);
+}
+.fontsize-3 {
+    font-size: var(--font-s-3);
+}
+.fontsize-4 {
+    font-size: var(--font-s-4);
+}
+.fontsize-5 {
+    font-size: var(--font-s-5);
+}
+.fontsize-6 {
+    font-size: var(--font-s-6);
+}
+.fontsize-7 {
+    font-size: var(--font-s-7);
+}
+.fontsize-8 {
+    font-size: var(--font-s-8);
+}
+.fontsize-9 {
+    font-size: var(--font-s-9);
+}
+.fontsize-10 {
+    font-size: var(--font-s-10);
+}
+.fontsize-11{
+    font-size: var(--font-s-11);
+}
+.fontsize-12{
+    font-size: var(--font-s-12);
+}
+/* 
+-----------------------------------------------
+    ESSENTIAL CLASSES
+----------------------------------------------- 
+*/
+.layout-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.layout-2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.layout-3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.mid-content{
+    text-align: left;
+    font-family: var(--font-1);
+}
+
+.highlight{
+    font-family: var(--font-2);
+    color: var(--color-4);
+}
+.anchor{
+    text-decoration: none;
+}
+
+.bord{
+    border: 2px solid var(--color-3);
+    /* box-shadow: 0 -15px 15px #c6c5c9aa inset  0 -15px 15px #ebe8f1aa  0 15px 15px var(--color-1)  0 15px 15px var(--color-1); */
+    /* box-shadow: 3px 5px 10px #3937368a; */
+}
+
+/* .height{
+    height: 120vh;
+} */
+
+.shd{
+    box-shadow: 3px 5px 10px #3937368a;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h-title{
+    line-height: 58px;
+    /* letter-spacing: -1px; */
+}
+.wrap{
+    overflow: hidden;
+    border-radius: 50%;
+    /* box-shadow: inset -0.6em -0.6em 1em #FFCACA,
+                inset 0.4em 0.4em 0.5em #FFCACA,
+                0.8em 0.8em 2em #FFCACA
+                ; */
+                /* border: 5px solid var(--color-1); */
+}
+.wrap img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    /* box-shadow: inset -0.6em -0.6em 1em #FFCACA,
+                inset 0.4em 0.4em 0.5em #FFCACA,
+                0.8em 0.8em 2em #FFCACA
+                ; */
+    transition: 0.4s;
+}
+/* .wrap img:hover{
+    transform: scale(1.1);
+} */
+.clay{
+    /* box-shadow: inset -0.6em -0.6em 1em #FFCACA,
+                inset 0.4em 0.4em 0.5em #FFCACA,
+                0.8em 0.8em 2em #FFCACA
+                ; */
+                /* border: 5px solid var(--color-1); */
+               
+                border: 5px solid var(--color-1);
+    
+    border-radius: 50%;
+}
+.social a i{
+    background: var(--color-1);
+    color: var(--color-4);
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    box-shadow: 3px 5px 10px #1917168a;
+    transition: 0.4s;
+}
+.social a i:hover{
+    color: var(--color-3);
+}
+.article{
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.article img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    box-shadow: 3px 5px 10px #1917168a;
+    cursor: pointer;
+
+}
+
+.article .context{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: start;
+    flex-direction: column;
+    background: var(--color-1);
+    border-radius: 0 0 8px 8px;
+    box-shadow: 3px 5px 10px #1917168a;
+}
+
+.article .context a:hover{
+    color: var(--color-8);
+}
+.recruiters{
+    display: flex;
+    flex-wrap: wrap;
+}
+.admin{
+    box-shadow: 3px 5px 10px #1917168a;
+    border-radius: 40px;
+}
+/* .foot-links{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+} */
+.connect{
+    color: var(--color-1);
+    font-size: var(--font-s-6);
+    
+    transition: 0.4s;
+}
+.connect:hover{
+    color: var(--color-3);
+    background: var(--color-2);
+}
+.connect i{
+    border-radius: 50%;
+    background: var(--color-4);
+    box-shadow: 3px 5px 10px #ffcaca22;
+
+}
+.key{
+    box-shadow: 3px 5px 10px #1917168a;
+    border-radius: 8px;
+}
+.x{
+    color: var(--color-4);
+}
+.x:hover{
+    color: var(--color-4);
+}
+/* 
+-----------------------------------------------
+    MEDIA QUERY
+----------------------------------------------- 
+*/
+
+@media only screen and (min-width: 300px){
+    .para-content{
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 500px) {
+    
+}
+@media only screen and (min-width: 600px) {
+    .para-content {
+        text-align: center;
+    }
+    .h-title{
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 992px) {
+
+}
+@media only screen and (min-width: 1020px) {
+
+}
+@media only screen and (min-width: 1200px) {
+
+}
